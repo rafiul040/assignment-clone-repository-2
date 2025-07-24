@@ -19,6 +19,7 @@ body{
     padding: 0;
     margin: 0;
     background: #f5f8ff;
+    overflow-x: hidden;
 }
 
 
@@ -34,17 +35,10 @@ body{
 }
 
 
-.logo img{
-    width: 135px;
-    height: 82px;
-}
 
 .navbar .nav{
     display: flex;
-    width: 450px;
-    justify-content: space-around;
     gap: 25px;
-    height: 60;
     align-items: center;
 }
 .nav li, a{
@@ -71,13 +65,11 @@ body{
 .banner{
     display: flex;
     justify-content: space-between;
-    height: 570px;
     padding-top: 215px;
 }
 
 .banner-content{
     max-width: 35%;
-    align-items: end;
 }
 .banner-title{
     font-size: 65px;
@@ -91,21 +83,17 @@ body{
 
 .banner-description{
     display: flex;
-    justify-content: end;
-    align-content: end;
     font-size: 22px;
     color: #8987a1;
     font-family: serif;
 }
 
-.banner-img{
-    min-width: 37%;
-}
+
 
 
 
 .main-container{
-    width: 79.5%;
+    width: 77.5%;
     margin: 0 auto 250px;
     justify-content: center;
 
@@ -116,8 +104,8 @@ body{
     text-align: center;
     width: 609px;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .main-title{
@@ -136,7 +124,7 @@ body{
     display: grid;
     justify-content: center;
     place-items: center;
-    grid-template-columns: repeat(4, 400px);
+    grid-template-columns: repeat(4, 350px);
 }
 .main-card img{
     width: 100%;
@@ -185,16 +173,13 @@ body{
     position: relative;
 }
 .badge{
-    width: 286px;
-    height: 286px;
-    left: 400px;
+    max-width: 286px;
+    left: 370px;
     top: -120px;
     position: absolute;
 }
 .flower-img{
-    /* width: 570px; */
     max-width: 100%;
-    height: 597px;
 }
 
 
@@ -230,10 +215,10 @@ body{
     color: #e95108;
 }
 .deals-description{
-    width: 840px;
     text-align: center;
     margin: 0 auto 90px;
     font-size: 22px;
+    width: 840px;
     color: #8987a1;
 }
 
@@ -252,7 +237,7 @@ body{
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     padding: 40px;
-    border-radius: 20px;
+    
 }
 
 .left-column{
@@ -263,12 +248,10 @@ body{
 
 .offer-box{
     position: relative;
-    border-radius: 20px;
 }
 .offer-box img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
     display: block;
     border-radius: 12px;
 }
@@ -297,7 +280,6 @@ body{
 }
 
 .offer-text p{
-    font-size: 18px;
     margin: 3px 0 0 60px;
     font-weight: 600;
     text-underline-offset: 5px;
@@ -364,7 +346,7 @@ body{
     color: #f5f8ff;
     text-align: center;
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 600;
     padding-top: 220px;
 }
 
