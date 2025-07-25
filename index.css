@@ -19,6 +19,7 @@ body {
 
 .container {
   max-width: 78.5%;
+  padding-top: 25px;
   margin: 20px auto 150px;
 }
 
@@ -57,7 +58,7 @@ a {
 }
 
 .banner-content {
-  max-width: 35%;
+  max-width: 39%;
 }
 .banner-title {
   font-size: 65px;
@@ -208,7 +209,9 @@ a {
 }
 .offer-deal {
   display: grid;
-  grid-template-columns: repeat(2, 4fr);
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 .offer img {
@@ -220,7 +223,7 @@ a {
 }
 .offer {
   display: grid;
- 
+
   width: 520px;
   margin-top: 20px;
 
@@ -245,7 +248,7 @@ a {
 }
 
 .deal-right img {
-  width: 100%;
+  width: 900px;
   border-radius: 10px;
   height: 420px;
   display: block;
@@ -253,7 +256,6 @@ a {
 
 .offer::after {
   content: "";
-
   position: absolute;
   top: 0;
   left: 0;
@@ -268,7 +270,7 @@ a {
   font-weight: 600;
 }
 .plant-offer {
-  width: 900px;
+  /* max-width: 1600px; */
 }
 .deal-text p {
   font-size: 18px;
@@ -292,7 +294,6 @@ a {
   height: 100%;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.4);
-  position: absolute;
 }
 
 .section {
@@ -386,7 +387,6 @@ a {
     flex-direction: column-reverse;
   }
 
-  
   .banner-content {
     max-width: 97%;
   }
@@ -456,13 +456,9 @@ a {
     width: 95%;
   }
 
-  .plant-offers {
-    display: block;
-  }
-
   .right-offer {
     margin-top: 20px;
-    width: 100%;
+    
   }
   .offer-text {
     right: 19%;
@@ -477,10 +473,16 @@ a {
     font-size: 25px;
     font-weight: 600;
   }
-.offer-deal{
-  display: grid;
-  width: 100%;
-  flex-direction: column;
+  .offer-deal {
+    display: grid;
+    /* max-width: 100%; */
+    flex-direction: column;
+  }
+  .deal-right img {
+  width: 520px;
+  border-radius: 10px;
+  /* height: 420px; */
+  /* display: block; */
 }
   .section {
     width: 100%;
@@ -516,86 +518,3 @@ a {
   }
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.offer-deal {
-  display: grid;
-  grid-template-columns: repeat(2, 4fr);
-  gap: 10px;
-}
-.offer img {
-  width: 100%;
-  height: 300px;
-  display: block;
-  background-color: blueviolet;
-  border-radius: 10px;
-}
-.offer {
-  display: grid;
-  /* gap: 120px; */
-  margin-top: 20px;
-
-  position: relative;
-}
-.dealer{
-  margin: 10px;
-}
-
-.deal-right h3 {
-  font-size: 20px;
-  font-weight: 500;
-}
-.deal-text {
-  position: absolute;
-  z-index: 5;
-
-  text-align: center;
-  color: #f5f8ff;
-
-  z-index: 5;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.plant-offer {
-  width: 96%;
-
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-
-  margin: 0 10px;
-}
-
-.deal-right img {
-  width: 100%;
-  border-radius: 10px;
-  height: 420px;
-  display: block;
-}
-
-.offer::after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-}
-
-.deal-right::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-}
