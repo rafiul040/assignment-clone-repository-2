@@ -475,22 +475,16 @@ a {
   }
   .offer-deal {
     display: grid;
-    /* max-width: 100%; */
-    flex-direction: column;
   }
   .deal-right img {
   width: 520px;
   border-radius: 10px;
-  /* height: 420px; */
-  /* display: block; */
+
 }
-  .section {
-    width: 100%;
-  }
+
 
   .section-title {
     font-size: 32px;
-    font-weight: 500;
   }
   .section-text {
     width: 80%;
@@ -499,12 +493,10 @@ a {
 
   .footer {
     display: grid;
-    width: 100%;
     margin-top: -100px;
   }
   .footer-left {
     max-width: 90%;
-    padding-left: 10px;
     margin: 0 auto;
   }
 
