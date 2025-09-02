@@ -40,16 +40,22 @@ a {
   font-size: 20px;
   color: #8987a1;
 }
+.nav li,
+a:hover{
+  color: #e95108;
+}
 .nav li:nth-child(1) a {
   color: #252432;
   font-weight: 700;
 }
+
 .nav li:nth-child(4) {
   color: #252432;
 }
 .nav li:nth-child(4) a {
   color: #000000;
 }
+
 
 .banner {
   display: flex;
@@ -505,8 +511,6 @@ a {
     margin-top: 150px;
   }
 
-  .social-link {
-    margin: 50px;
-  }
+
 }
 
